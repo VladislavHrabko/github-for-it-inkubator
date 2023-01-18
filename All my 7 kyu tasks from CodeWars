@@ -10,3 +10,19 @@ function findNextSquare(sq) {
   
   return (Math.sqrt(sq) % 1=== 0)? (Math.sqrt(sq) + 1) * (Math.sqrt(sq) + 1) : -1; 
 }
+
+Task 2
+Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+Examples (Input -> Output):
+* "String"      -> "SSttrriinngg"
+* "Hello World" -> "HHeelllloo  WWoorrlldd"
+* "1234!_ "     -> "11223344!!__  "
+
+Issue:
+function doubleChar(str) {
+  var total = '';
+  for (var i = 0; i < str.length; i++) {
+    total += str[i] + str[i];
+  }
+return total;
+}

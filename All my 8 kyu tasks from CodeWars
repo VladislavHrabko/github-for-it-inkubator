@@ -45,3 +45,18 @@ return (number === 1) ? 'One' : (number === 2) ? "Two" : (number === 3) ? 'Three
  ? 'Four' : (number === 5) ? 'Five' : (number === 6) ? 'Six' : (number === 7) ? 'Seven' : (number === 8) 
 ? 'Eight' : (number === 9) ? 'Nine' : 'Zero';
 }
+
+Fifth task
+Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+Example:
+["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+None of the arrays will be empty, so you don't have to worry about that!
+
+Issue:
+function removeEveryOther(arr){
+var array = [];
+  for (var i = 0; i < arr.length; i += 2) {
+  array.push(arr[i]);
+  }
+  return array;
+}

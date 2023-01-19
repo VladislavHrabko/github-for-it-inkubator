@@ -93,3 +93,28 @@ sum.push(Math.max(...splitArray));
 sum.push(Math.min(...splitArray));
     return sum.join(' ');
 }
+
+Task 6
+Return the number (count) of vowels in the given string.
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+The input string will only consist of lower case letters and/or spaces.
+
+Issue:
+function getCount(str) {
+var str = str.split('');
+  var count = 0;
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] == 'a') { 
+  count++;
+    } else if (str[i] == 'e') {
+      count++;
+    } else if (str[i] == 'i') {
+      count++;
+    } else if (str[i] == 'o') {
+      count++;
+    } else if (str[i] == 'u') {
+      count++;
+    }
+  }
+  return count;
+}

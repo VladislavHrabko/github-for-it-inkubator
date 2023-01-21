@@ -127,5 +127,5 @@ The input array will always be valid! (odd-length >= 3)
 Issue:
 function stray(numbers) {
   const sortNumbers = numbers.sort((a, b) => a - b);
-  return (sortNumbers[1] == sortNumbers[0]) ? sortNumbers.length - 1 : sortNumbers[0];
+  return (sortNumbers[1] == sortNumbers[0]) ? sortNumbers.pop() : sortNumbers[0];
 }

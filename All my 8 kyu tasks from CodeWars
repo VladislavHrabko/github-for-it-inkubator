@@ -91,3 +91,11 @@ const Kata = {
     return length * width * height;
   }
 }
+
+Task 8
+Write a function to split a string and convert it into an array of words.
+
+Issue: 
+function stringToArray(string){
+return string.split(' ');
+}

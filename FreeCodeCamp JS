@@ -47,3 +47,10 @@ Use the Conditional (Ternary) Operator:
       function checkEqual(a, b) {
       return a == b ? 'Equal' : 'Not Equal'
       }
+      
+Use Multiple Conditional (Ternary) Operators
+      function checkSign(num) {
+      return (num === 0) ? 'zero'
+      : (num > 0) ? 'positive'
+      : 'negative'
+      }

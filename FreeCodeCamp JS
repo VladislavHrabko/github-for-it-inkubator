@@ -18,6 +18,7 @@ Generate Random Fractions with JavaScript:
         return Math.random();
         }
 
+
 Generate Random Whole Numbers with JavaScript:
       function randomWholeNum() {
        return Math.floor(Math.random() * 10);
@@ -35,7 +36,14 @@ Use the parseInt Function:
       return parseInt(str);
       }
       
+      
 Use the parseInt Function with a Radix:
       function convertToInteger(str) {
       return parseInt(str, 2);
+      }
+      
+      
+Use the Conditional (Ternary) Operator:
+      function checkEqual(a, b) {
+      return a == b ? 'Equal' : 'Not Equal'
       }

@@ -37,6 +37,5 @@ Use the parseInt Function:
       
 Use the parseInt Function with a Radix:
       function convertToInteger(str) {
-      const a = parseInt(str, 2);
-      return a;
+      return parseInt(str, 2);
       }

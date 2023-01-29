@@ -99,3 +99,15 @@ Issue:
 function stringToArray(string){
 return string.split(' ');
 }
+
+Task 9 
+Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
+
+Issue:
+function between(a, b) {
+  const array = [];
+while (a <= b) {
+  array.push(a++);
+  }
+  return array;
+}

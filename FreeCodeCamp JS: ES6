@@ -9,3 +9,8 @@ function checkScope() {
   return i;
 }
 
+
+Mutate an Array Declared with const:
+s[0] = 2;
+s[1] = 5;
+s[2] = 7;

@@ -40,3 +40,7 @@ const sum = (...args) => args.reduce((a, b) => a + b, 0);
 
 Use the Spread Operator to Evaluate Arrays In-Place:
 arr2 = [...arr1];
+
+
+Use Destructuring Assignment to Extract Values from Objects:
+const {today, tomorrow} = HIGH_TEMPERATURES;

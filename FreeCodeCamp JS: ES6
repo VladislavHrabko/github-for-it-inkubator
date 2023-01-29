@@ -14,3 +14,7 @@ Mutate an Array Declared with const:
 s[0] = 2;
 s[1] = 5;
 s[2] = 7;
+
+
+Prevent Object Mutation:
+Object.freeze(MATH_CONSTANTS);

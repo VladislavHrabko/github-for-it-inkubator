@@ -37,3 +37,6 @@ const increment = (number, value = 1) => number + value ;
 Use the Rest Parameter with Function Parameters:
 const sum = (...args) => args.reduce((a, b) => a + b, 0);
 
+
+Use the Spread Operator to Evaluate Arrays In-Place:
+arr2 = [...arr1];

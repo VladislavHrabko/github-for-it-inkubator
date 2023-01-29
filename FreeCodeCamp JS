@@ -65,3 +65,14 @@ function countdown(n){
     return countArray1;
   }
 }
+
+Use Recursion to Create a Range of Numbers:
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+return [];
+  } else {
+const array = rangeOfNumbers(startNum, endNum - 1);
+array.push(endNum);
+  return array;
+  }
+};

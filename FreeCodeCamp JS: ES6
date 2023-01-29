@@ -18,3 +18,7 @@ s[2] = 7;
 
 Prevent Object Mutation:
 Object.freeze(MATH_CONSTANTS);
+
+
+Use Arrow Functions to Write Concise Anonymous Functions:
+const magic = () => new Date();

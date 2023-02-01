@@ -221,3 +221,13 @@ var laLigaGoals = 43;
 var championsLeagueGoals = 10;
 var copaDelReyGoals = 5;
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+
+Task 14
+The starship Enterprise has run into some problem when creating a program to greet everyone as they come aboard. 
+It is your job to fix the code and get the program working again!
+
+Issue:
+function sayHello(name) {
+  return 'Hello, ' + name;
+}

@@ -276,3 +276,11 @@ Best practice:
 function countSheeps(arrayOfSheeps) {
   return arrayOfSheeps.filter(Boolean).length;
 }
+
+Task 18
+Write a function that returns a string in which firstname is swapped with last name.
+
+My issue:
+function nameShuffler(str){
+  return str.split(' ').reverse().join(' ');
+}

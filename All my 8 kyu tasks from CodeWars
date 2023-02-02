@@ -300,3 +300,8 @@ My Issue:
 function checkForFactor (base, factor) {
  return ((base % factor) == 0) ? true : false;
 }
+
+Best practice:
+function checkForFactor (base, factor) {
+  return base % factor === 0;
+}

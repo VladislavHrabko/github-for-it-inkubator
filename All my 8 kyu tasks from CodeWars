@@ -492,3 +492,18 @@ function trueOrFalse(val){
   if (val == false || val == null || val == NaN || val == undefined)    return 'false';             
   else     return 'true';
 }
+
+Task 30
+Training JS #7: if..else and ternary operator
+In JavaScript, if..else is the most basic conditional statement, it consists of three parts:condition, statement1, statement2, like this:
+
+My issue:
+function saleHotdogs(n) {
+  if (n < 5) {
+    return n * 100; 
+} else if  (n >= 5 && n < 10) {
+  return n * 95;
+} else if (n >= 10) {
+  return n * 90;
+}
+}

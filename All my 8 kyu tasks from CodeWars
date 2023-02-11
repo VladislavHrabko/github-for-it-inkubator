@@ -481,3 +481,14 @@ My issue:
 function animal(obj){
   return "This " + obj.color + " " + obj.name + " has " + obj.legs + " legs."
 }
+
+Task 29
+Training JS #6: Basic data types--Boolean and conditional statements if..else
+In javascript, Boolean object only has two value, true or false. Use ===, ==, >, <, >=, <= between two variables(or constant), the result of such an expression is a bool value. 
+The operation between the two bool values can be used with logical operators:&&, ||, ! or some bitwise operators:&, |, ^
+
+My issue:
+function trueOrFalse(val){
+  if (val == false || val == null || val == NaN || val == undefined)    return 'false';             
+  else     return 'true';
+}

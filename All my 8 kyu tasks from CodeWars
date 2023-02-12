@@ -346,7 +346,7 @@ function square(arg) {
 
 
 Task 23
-Write a function that always returns 5
+#1Write a function that always returns 5
 Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
 Good luck :)
 
@@ -366,7 +366,7 @@ function helloWorld() {
 
 
 Task 25
-In javascript, Number is one of basic data types. It can be positive: 1,2,3, negative:-1,-100 , integer:123,456, decimal:3.1415926,-8.88 etc..
+#2In javascript, Number is one of basic data types. It can be positive: 1,2,3, negative:-1,-100 , integer:123,456, decimal:3.1415926,-8.88 etc..
 Numbers can use operators such as + - * / %
 Task
 I've written five function equal1,equal2,equal3,equal4,equal5, defines six global variables v1 v2 v3 v4 v5 v6, every function has two local variables a,b, please set the appropriate value for the two variables(select from v1--v6), 
@@ -408,7 +408,7 @@ function equal5(){
 
 
 Task 26
-In javascript, String is one of basic data types. Use "" or '' to declare a string variable. It can be letters:a,b,c,A,B,C, numbers: 123..., Various symbol:@#$%^&* , Control symbol:\n,\t etc..
+#3In javascript, String is one of basic data types. Use "" or '' to declare a string variable. It can be letters:a,b,c,A,B,C, numbers: 123..., Various symbol:@#$%^&* , Control symbol:\n,\t etc..
 String can use operators +, Connect two or more strings together.
 
 My issue:
@@ -441,7 +441,7 @@ function answer3(){
 
 
 Task 27
-In javascript, Array is one of basic data types. To define an empty array, you can use var arr=new Array() or var arr=[]
+#4In javascript, Array is one of basic data types. To define an empty array, you can use var arr=new Array() or var arr=[]
 Array has an attribute: length, if there is an array named arr, using arr.length to know how many elements are contained in the array.
 
 My issue:
@@ -673,4 +673,36 @@ while (first !== last + 1) {
   first += 1;
   }
   return result;
+}
+
+
+Task 39
+Training JS #13: Number object and its properties
+Coding in function whatNumberIsIt. function accept 1 parameter:n. it's a number.
+To judge the number n. If n is one of the above five constants, return one of these string:
+"Input number is Number.MAX_VALUE"
+"Input number is Number.MIN_VALUE"
+"Input number is Number.NaN"
+"Input number is Number.NEGATIVE_INFINITY"
+"Input number is Number.POSITIVE_INFINITY"
+Other values should return "Input number is xxx". xxx means this number.
+
+My issue:
+function whatNumberIsIt(n){
+  if (n === Number.MAX_VALUE) {
+    return 'Input number is Number.MAX_VALUE';}
+ if (n === Number.MIN_VALUE) {
+    return 'Input number is Number.MIN_VALUE';}
+  if ( isNaN(n)) {
+    return ("Input number is Number.NaN");
+  }
+  if (n === Number.NEGATIVE_INFINITY) {
+      return "Input number is Number.NEGATIVE_INFINITY";
+}
+  if (n === Number.POSITIVE_INFINITY) {
+    return "Input number is Number.POSITIVE_INFINITY";
+  }
+  if (n === Number(n)) {
+    return "Input number is " + n;
+  }
 }

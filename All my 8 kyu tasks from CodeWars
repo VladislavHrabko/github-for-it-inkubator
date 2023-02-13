@@ -772,3 +772,18 @@ function firstToLast(str,c){
   let lastInd = str.lastIndexOf(c);
   return (firstInd === -1 && lastInd === -1) ? -1 : (firstInd === lastInd) ? 0 : (firstInd !== lastInd) ? (lastInd - firstInd) : -1;
 }
+
+Task 43
+Training JS #18: Methods of String object--concat() split() and its good friend join()
+Implement a function which accepts 2 arguments: string and separator.
+The expected algorithm: split the string into words by spaces, split each word into separate characters and join them back with the specified separator, join all the resulting "words" back into a sentence with spaces.
+
+My issue:
+function splitAndMerge(string, separator) {
+var str = string.split(' ');
+  var newStr = [];
+for (var i = 0; i < str.length; i++) {
+  newStr.push(str[i].split('').join(separator)); 
+}
+  return newStr.join(' ');
+  }

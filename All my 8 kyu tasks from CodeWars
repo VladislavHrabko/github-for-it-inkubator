@@ -759,3 +759,16 @@ function cutIt(arr){
   }
   return answer;
 }
+
+Task 42
+Training JS #17: Methods of String object--indexOf(), lastIndexOf() and search()
+Coding in function firstToLast, function accept 2 parameters:str and c. str is a string. c is a char.
+Please return the gap between the first position of c and the last position of c.
+If there are a lot of c in the str, should return a positive integer; If there is only one c in str, should return 0; If there is no c in the str, should return -1. Retrieval should not ignored the case.
+
+My issue: 
+function firstToLast(str,c){
+ let firstInd = str.indexOf(c);
+  let lastInd = str.lastIndexOf(c);
+  return (firstInd === -1 && lastInd === -1) ? -1 : (firstInd === lastInd) ? 0 : (firstInd !== lastInd) ? (lastInd - firstInd) : -1;
+}

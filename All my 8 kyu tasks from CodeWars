@@ -739,3 +739,23 @@ let rgb = '';
  }
   return "#" + rgb;
 }
+
+Task 41
+Training JS #16: Methods of String object--slice(), substring() and substr()
+Coding in function cutIt, function accept 1 parameter:arr. arr is a string array.
+The first mission: Traversing arr, find the shortest string length.
+The second mission: Traversing arr again, intercept all strings to the shortest string length(Start from index0). you can use one of slice() substring() or substr() do it. return the result after finished the work.
+
+My issue:
+function cutIt(arr){
+  var allArrLength = [];
+  var answer =  [];
+  for (var i = 0; i < arr.length; i++) {
+    allArrLength.push(arr[i].length);
+  }
+  let minLength = allArrLength.sort((a,b) => a - b);
+  for (var j = 0; j < arr.length; j++) {
+    answer.push(arr[j].slice(0, minLength[0]));
+  }
+  return answer;
+}

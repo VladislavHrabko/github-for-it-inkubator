@@ -803,3 +803,8 @@ var dna = dna.split('');
   }
   return rna.join('');
 }
+
+Best practice:
+function DNAtoRNA(dna){
+  return dna.replace(/T/g, 'U');
+}

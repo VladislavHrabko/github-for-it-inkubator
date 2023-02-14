@@ -799,11 +799,7 @@ function DNAtoRNA(dna) {
 var dna = dna.split('');
   var rna = [];
   for (var i = 0; i < dna.length; i++) {
-    if (dna[i] === 'T') {
-      rna.push('U');
-    } else {
-      rna.push(dna[i]);
-    }
+    (dna[i] === 'T') ? rna.push('U') : rna.push(dna[i]);
   }
   return rna.join('');
 }

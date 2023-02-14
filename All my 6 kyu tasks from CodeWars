@@ -81,3 +81,18 @@ for (var i = 0; i < code.length; i++) {
 } 
  return  '('+numb[0]+numb[1]+numb[2]+')'+' '+numb[3]+numb[4]+numb[5]+'-'+numb[6]+numb[7]+numb[8]+numb[9];
 }
+
+Its more common:
+function createPhoneNumber(numbers){
+ return  '('+numbers[0]+numbers[1]+numbers[2]+')'+' '+numbers[3]+numbers[4]+numbers[5]+'-'+numbers[6]+numbers[7]+numbers[8]+numbers[9];
+}
+
+Best practice:
+function createPhoneNumber(numbers){
+  var format = "(xxx) xxx-xxxx";
+  for(var i = 0; i < numbers.length; i++)
+  {
+    format = format.replace('x', numbers[i]);
+ }
+  return format;
+}

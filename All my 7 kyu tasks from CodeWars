@@ -163,3 +163,22 @@ var sent = this.split(' ');
   }
   return sent.join(' ');
 };
+
+Task 10
+Isograms
+An isogram is a word that has no repeating letters, consecutive or non-consecutive. 
+Implement a function that determines whether a string that contains only letters is an isogram. 
+Assume the empty string is an isogram. Ignore letter case.
+
+My issue:
+function isIsogram(str){
+  var str = str.toLowerCase().split('');
+  for (var i = 0; i < str.length; i++) {
+for (var j = i + 1; j < str.length; j++) {
+  if (str[i] == str[j]) {
+    return false;
+  }
+}
+  }
+  return true;
+}

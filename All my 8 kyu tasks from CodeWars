@@ -832,3 +832,17 @@ My issue:
 function check(a, x) {
 return a.indexOf(x) != -1;
 }
+
+
+Task 47
+Reversed sequence
+Build a function that returns an array of integers from n to 1 where n>0.
+
+My issue:
+const reverseSeq = n => {
+  var arr = [];
+  while (n > 0) {
+    arr.push(n--);
+  }
+  return arr;
+};

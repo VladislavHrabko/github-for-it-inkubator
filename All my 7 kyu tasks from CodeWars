@@ -182,3 +182,20 @@ for (var j = i + 1; j < str.length; j++) {
   }
   return true;
 }
+
+
+Task 11
+Find the capitals
+Write a function that takes a single string (word) as argument. 
+The function must return an ordered list containing the indexes of all capital letters in the string.
+
+My issue:
+var capitals = function (word) {
+  var arr = [];
+  for (var i = 0; i < word.length; i++) {
+    if (word[i] == word[i].toUpperCase()) {
+      arr.push(word.indexOf(word[i]));
+    }
+  }
+ return arr;
+}

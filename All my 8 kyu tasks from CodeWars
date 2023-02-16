@@ -872,3 +872,26 @@ function findDifference(a, b) {
   var m2 = b.reduce((a, b) => a * b);
   return (m1 < m2) ? m2 - m1 : m1 - m2;
 }
+
+Task 50
+Square(n) Sum
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
+For example, for [1, 2, 2] it should return 9 because 
+
+My issue:
+// function squareSum(numbers){
+// var sum = 0;
+//   for (var i = 0; i < numbers.length; i++) {
+//   sum += numbers[i] ** 2;
+//   }
+//   return sum;
+// }
+
+
+function squareSum(numbers){
+  var sum = 0;
+  for (var i = 0; i < numbers.length; i++) {
+   sum += Math.pow(numbers[i], 2);
+    }
+  return sum;
+  }
